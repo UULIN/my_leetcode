@@ -1,12 +1,7 @@
-from queue import LifoQueue
-
-stark = []
-list = []
-s = '{ } ]  {'
-list.append(s)
-for i in s:
-    if i not in ' ':
-        stark.append(i)
-print(stark)
-s = stark[0]+stark[-1]
-print(s)
+list1 = ["flower","flow","flight"]
+res = ""
+for temp in zip(*list1):
+    temp_set = set(temp)
+    if len(temp_set) == 1:
+        res += temp[0]
+print(res)
