@@ -31,6 +31,17 @@ class Solution(object):
             else:
                 break
         return res
-if __name__ == '__main__':
-    s = Solution
-    print(s.longestCommonPrefix("flower","flow","flight"))
+    def longestCommonPrefix1(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        if not strs:
+            return ""
+        min0 = min(strs)
+        max0 = max(strs)
+        for i in range(len(min0)):
+            if min0[i] != max0[i]:
+                return min0[:i]
+        return min0
+
