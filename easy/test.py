@@ -1,5 +1,3 @@
-s = 'sdfsd'
-
-if 'fs' in s:
-    s = s.strip('fs')
-print(s)
+list = [1,2,4,5,6]
+list.insert(3, 7)
+print(list)
