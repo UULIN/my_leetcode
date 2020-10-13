@@ -27,6 +27,7 @@ class Solution(object):
             s = s.replace('[]', '')
             s = s.replace('()', '')
         return s == ''
+
     def isValid2(self, s):
         """
 

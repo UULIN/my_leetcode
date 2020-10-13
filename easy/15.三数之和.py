@@ -35,5 +35,6 @@ def threeSum(nums):
                 k -= 1
     return list_result
 
+
 if __name__ == '__main__':
     print(threeSum([-1, 0, 1, 2, -1, -4]))
