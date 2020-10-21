@@ -20,13 +20,17 @@
 链接：https://leetcode-cn.com/problems/palindrome-number
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
+
+
 class Solution(object):
+    
     def isPalindrome(self, x):
         """
         :type x: int
         :rtype: bool
         """
         return str(x) == str(x)[::-1]
+
     def isPalindrome2(self, x):
         """
         取模运算
@@ -37,6 +41,7 @@ class Solution(object):
         ans = 0
         if x < 0:
             return False
+
         while(x > 0):
             tmp = x % 10
             ans = ans * 10 + tmp
